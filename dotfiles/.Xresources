@@ -1,56 +1,60 @@
 ! Rofi config
-rofi.font: xos4 Terminus 10
+rofi*font:		xos4 Terminus 10
 
 ! URxvt config
-URxvt.internalBorder: 20
+URxvt*internalBorder:	20
 
 ! scroll-bar
-URxvt.scrollstyle: plain
-URxvt.scrollBar: false
-URxvt.scrollBar_right: true
+URxvt*scrollstyle:	plain
+URxvt*scrollBar:	false
+URxvt*scrollBar_right:	true
 
 ! clickable links, clipboard support, mouse wheel support, and on the fly font resizing
-URxvt.perl-ext-common: default,matcher,clipboard,resize-font
-URxvt.keysym.M-C: perl:keyboard-select:activate
-URxvt.url-launcher: /usr/bin/firefox
-
+URxvt*perl-ext-common:	default,matcher,clipboard,resize-font,url-select,keyboard-select
+URxvt*url-launcher:	/usr/bin/firefox
+URxvt*underlineURLs:	true
+URxvt*matcher.button:	1
+URxvt*keysym.Control-Shift-Escape:	perl:keyboard-select:activate
+URxvt.keysym.Control-Shift-C:	perl:clipboard:coy
+URxvt.keysym.Control-Shift-V:	perl:clipboard:paste
 ! Font settings
-URxvt.font:	xft:xos4terminus:size=10
-URxvt.boldFont:	xft:xos4terminus:size=10
+Xft*dpi:		104
+URxvt.font:		xft:xos4terminus:size=10:antialias=false
+URxvt.boldFont:		xft:xos4terminus:size=10:antialias=false
 
 ! special
-*.foreground:   #a39e9b
-*.background:   #2f1e2e
-*.cursorColor:  #a39e9b
+*.foreground:	#a39e9b
+*.background:	#2f1e2e
+*.cursorColor:	#a39e9b
 
 ! black
-*.color0:       #2f1e2e
-*.color8:       #776e71
+*.color0:	#2f1e2e
+*.color8:	#776e71
 
 ! red
-*.color1:       #ef6155
-*.color9:       #ef6155
+*.color1:	#ef6155
+*.color9:	#ef6155
 
 ! green
-*.color2:       #48b685
-*.color10:      #48b685
+*.color2:	#48b685
+*.color10:	#48b685
 
 ! yellow
-*.color3:       #fec418
-*.color11:      #fec418
+*.color3:	#fec418
+*.color11:	#fec418
 
 ! blue
-*.color4:       #06b6ef
-*.color12:      #06b6ef
+*.color4:	#06b6ef
+*.color12:	#06b6ef
 
 ! magenta
-*.color5:       #815ba4
-*.color13:      #815ba4
+*.color5:	#815ba4
+*.color13:	#815ba4
 
 ! cyan
-*.color6:       #5bc4bf
-*.color14:      #5bc4bf
+*.color6:	#5bc4bf
+*.color14:	#5bc4bf
 
 ! white
-*.color7:       #a39e9b
-*.color15:      #e7e9db
+*.color7:	#a39e9b
+*.color15:	#e7e9db

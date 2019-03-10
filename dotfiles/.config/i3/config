@@ -192,11 +192,23 @@ bar {
 }
 
 # Key-bindings
-bindsym XF86AudioRaiseVolume exec "amixer -q sset Master 5%+ unmute; pkill -RTMIN+10 i3blocks"
-bindsym XF86AudioLowerVolume exec "amixer -q sset Master 5%- unmute; pkill -RTMIN+10 i3blocks"
-bindsym XF86AudioMute exec "amixer -q sset Master toggle; pkill -RTMIN+10 i3blocks"
-bindsym Print exec "scrot $HOME/Pictures/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'"
-bindsym Shift+Print --release exec "scrot -s $HOME/Pictures/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'"
+# Dunst notifiactions test
+bindsym $mod+u exec "sh ~/.config/dunst/dtest"
+# Audio
+# Alsa controls
+bindsym XF86AudioRaiseVolume	exec "amixer -q sset Master 5%+ unmute && pkill -RTMIN+10 i3blocks && dunstify -r 314159 $(sh ~/.config/i3/scripts/volume)"
+bindsym XF86AudioLowerVolume	exec "amixer -q sset Master 5%- unmute && pkill -RTMIN+10 i3blocks && dunstify -r 314159 $(sh ~/.config/i3/scripts/volume)"
+bindsym XF86AudioMute		exec "amixer -q sset Master toggle && pkill -RTMIN+10 i3blocks && dunstify -r 314159 $(sh ~/.config/i3/scripts/volume)"
+# Pulse Audio controls
+#bindsym XF86AudioRaiseVolume	exec "pactl set-sink-volume 0 +5%; pkill -RTMIN+10 i3blocks"
+#bindsym XF86AudioLowerVolume	exec "pactl set-sink-volume 0 -5%; pkill -RTMIN+10 i3blocks"
+#bindsym XF86AudioMute		exec "pactl set-sink-mute 0 toggle; pkill -RTMIN+10 i3blocks"
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp	exec "xbacklight -inc 20"
+bindsym XF86MonBrightnessDown	exec "xbacklight -dec 20"
+
+bindsym Print			exec "scrot $HOME/Pictures/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'"
+bindsym Shift+Print --release	exec "scrot -s $HOME/Pictures/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'"
 
 ## Assign windows to workspaces
 # Web Browser
@@ -208,17 +220,21 @@ set $terminal_app "URxvt"
 assign [class=$terminal_app] $ws2
 for_window [class=$terminal_app] focus
 
-# Startup programs
+## Startup
+# On first start
+exec --no-startup-id "compton -f"
+exec --no-startup-id "redshift -t 6500:4000"
+# i3 restart
 exec_always "setxkbmap -layout ro,ru"
 exec_always "setxkbmap -option 'grp:alt_shift_toggle'"
-exec_always feh --bg-fill ~/.wallpaper.jpg
-exec_always xrdb -merge ~/.Xresources
-exec --no-startup-id compton -f
+exec_always "feh --bg-fill ~/.wallpaper.jpg"
+exec_always "xrdb -merge ~/.Xresources"
 
 ## i3-gaps config
 
+smart_gaps on
 gaps inner 10
-gaps outer 10
+#gaps outer 10
 
 set $mode_gaps Gaps: (o)uter, (i)nner, (h)orizontal, (v)ertical, (t)op, (r)ight, (b)ottom, (l)eft
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)

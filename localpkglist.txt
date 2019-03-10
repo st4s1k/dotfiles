@@ -1,0 +1,6 @@
+bluez-hcitool
+bluez-rfcomm
+cutecom
+polybar
+vk-messenger
+xcursor-dmz

@@ -1,4 +1,21 @@
+# My aliases
+
 alias c="xclip -sel clip"
+alias qcdir="cd ~/GitRepos/QuadroneCarlos/"
+alias qcrfcomm="sudo rfcomm bind 0 20:15:04:10:64:55"
+alias bkpcfg="cp -rf \
+~/.zshrc.local \
+~/.Xresources \
+~/.config \
+~/.wallpaper.jpg \
+~/.scripts ~/.icons \
+~/.fonts \
+~/.urxvt \
+~/.vimrc \
+~/.compton.conf \
+~/GitRepos/linux_config/dotfiles/ ; \
+pacman -Qqen > ~/GitRepos/linux_config/pkglist.txt ; \
+pacman -Qqem > ~/GitRepos/linux_config/localpkglist.txt"
 
 # Filename:      /etc/skel/.zshrc
 # Purpose:       config file for zsh (z shell)
