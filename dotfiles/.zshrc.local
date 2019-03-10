@@ -1,21 +1,16 @@
 # My aliases
-
+# - Navigation
+alias cdqc="cd ~/GitRepos/QuadroneCarlos/"
+alias cdgr="cd ~/GitRepos"
+alias cdms="cd ~/MyStuff"
+# - Shortcuts
+alias cleandep="sudo pacman -Rs $(pacman -Qtdq)"
 alias c="xclip -sel clip"
-alias qcdir="cd ~/GitRepos/QuadroneCarlos/"
 alias qcrfcomm="sudo rfcomm bind 0 20:15:04:10:64:55"
-alias bkpcfg="cp -rf \
-~/.zshrc.local \
-~/.Xresources \
-~/.config \
-~/.wallpaper.jpg \
-~/.scripts ~/.icons \
-~/.fonts \
-~/.urxvt \
-~/.vimrc \
-~/.compton.conf \
-~/GitRepos/linux_config/dotfiles/ ; \
-pacman -Qqen > ~/GitRepos/linux_config/pkglist.txt ; \
-pacman -Qqem > ~/GitRepos/linux_config/localpkglist.txt"
+alias bkpcfg="sh ~/GitRepos/linux_config/backup.sh"
+
+
+# Grml settings
 
 # Filename:      /etc/skel/.zshrc
 # Purpose:       config file for zsh (z shell)
