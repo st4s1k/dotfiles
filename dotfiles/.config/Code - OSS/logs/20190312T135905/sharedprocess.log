@@ -1,0 +1,54 @@
+[2019-03-12 13:59:08.584] [sharedprocess] [info] main {"machineId":"9fbc5806cfe91b6b9708c7da27724b647608dfdd4a830f9fda8b53af08905f8d"}
+[2019-03-12 13:59:08.644] [sharedprocess] [info] Scanned user extensions: 1
+[2019-03-12 13:59:08.663] [sharedprocess] [info] Scanned user extensions: 1
+[2019-03-12 13:59:08.699] [sharedprocess] [info] Scanned system extensions: 72
+[2019-03-12 13:59:08.700] [sharedprocess] [info] Scanned system extensions: 72
+[2019-03-12 13:59:09.416] [sharedprocess] [info] Scanned user extensions: 1
+[2019-03-12 13:59:48.604] [sharedprocess] [info] Starting to clean up unused language packs.
+[2019-03-12 14:04:09.451] [sharedprocess] [info] Scanned user extensions: 1
+[2019-03-12 14:09:09.464] [sharedprocess] [info] Scanned user extensions: 1
+[2019-03-12 14:14:09.477] [sharedprocess] [info] Scanned user extensions: 1
+[2019-03-12 14:19:09.483] [sharedprocess] [info] Scanned user extensions: 1
+[2019-03-12 14:24:09.487] [sharedprocess] [info] Scanned user extensions: 1
+[2019-03-12 14:29:09.494] [sharedprocess] [info] Scanned user extensions: 1
+[2019-03-12 14:34:09.501] [sharedprocess] [info] Scanned user extensions: 1
+[2019-03-12 14:39:09.510] [sharedprocess] [info] Scanned user extensions: 1
+[2019-03-12 14:44:09.519] [sharedprocess] [info] Scanned user extensions: 1
+[2019-03-12 14:49:09.532] [sharedprocess] [info] Scanned user extensions: 1
+[2019-03-12 14:50:46.901] [sharedprocess] [info] Scanned user extensions: 1
+[2019-03-12 14:50:46.906] [sharedprocess] [info] Scanned user extensions: 1
+[2019-03-12 14:50:46.909] [sharedprocess] [info] Scanned user extensions: 1
+[2019-03-12 14:50:46.922] [sharedprocess] [info] Scanned user extensions: 1
+[2019-03-12 14:50:46.975] [sharedprocess] [info] Scanned system extensions: 72
+[2019-03-12 14:50:46.979] [sharedprocess] [info] Scanned system extensions: 72
+[2019-03-12 14:50:46.984] [sharedprocess] [info] Scanned system extensions: 72
+[2019-03-12 14:51:17.852] [sharedprocess] [info] Installing extension: equinusocio.vsc-material-theme
+[2019-03-12 14:51:17.856] [sharedprocess] [info] Scanned user extensions: 1
+[2019-03-12 14:51:18.920] [sharedprocess] [info] Downloaded extension: equinusocio.vsc-material-theme /tmp/1ff89128-ca84-4fe9-8e04-0b3c1660ff1c
+[2019-03-12 14:51:19.039] [sharedprocess] [info] Extracted extension to /home/stanislav/.vscode-oss/extensions/.equinusocio.vsc-material-theme-2.7.0: equinusocio.vsc-material-theme
+[2019-03-12 14:51:19.039] [sharedprocess] [info] Renamed to /home/stanislav/.vscode-oss/extensions/equinusocio.vsc-material-theme-2.7.0
+[2019-03-12 14:51:19.040] [sharedprocess] [info] Installation completed. equinusocio.vsc-material-theme
+[2019-03-12 14:51:19.055] [sharedprocess] [info] Extensions installed successfully: equinusocio.vsc-material-theme
+[2019-03-12 14:51:51.960] [sharedprocess] [info] Installing extension: pkief.material-icon-theme
+[2019-03-12 14:51:51.965] [sharedprocess] [info] Scanned user extensions: 2
+[2019-03-12 14:51:52.683] [sharedprocess] [info] Downloaded extension: pkief.material-icon-theme /tmp/8ff1625c-ccb7-4902-9aa9-df8f6e1894d3
+[2019-03-12 14:51:53.337] [sharedprocess] [info] Extracted extension to /home/stanislav/.vscode-oss/extensions/.pkief.material-icon-theme-3.6.3: pkief.material-icon-theme
+[2019-03-12 14:51:53.337] [sharedprocess] [info] Renamed to /home/stanislav/.vscode-oss/extensions/pkief.material-icon-theme-3.6.3
+[2019-03-12 14:51:53.338] [sharedprocess] [info] Installation completed. pkief.material-icon-theme
+[2019-03-12 14:51:53.353] [sharedprocess] [info] Extensions installed successfully: pkief.material-icon-theme
+[2019-03-12 14:53:00.980] [sharedprocess] [info] Scanned user extensions: 3
+[2019-03-12 14:53:00.982] [sharedprocess] [info] Scanned user extensions: 3
+[2019-03-12 14:53:00.984] [sharedprocess] [info] Scanned user extensions: 3
+[2019-03-12 14:53:01.027] [sharedprocess] [info] Scanned system extensions: 72
+[2019-03-12 14:53:01.031] [sharedprocess] [info] Scanned system extensions: 72
+[2019-03-12 14:53:01.035] [sharedprocess] [info] Scanned system extensions: 72
+[2019-03-12 14:53:58.157] [sharedprocess] [info] Scanned user extensions: 3
+[2019-03-12 14:53:58.160] [sharedprocess] [info] Scanned user extensions: 3
+[2019-03-12 14:53:58.162] [sharedprocess] [info] Scanned user extensions: 3
+[2019-03-12 14:53:58.164] [sharedprocess] [info] Scanned user extensions: 3
+[2019-03-12 14:53:58.166] [sharedprocess] [info] Scanned user extensions: 3
+[2019-03-12 14:53:58.237] [sharedprocess] [info] Scanned system extensions: 72
+[2019-03-12 14:53:58.240] [sharedprocess] [info] Scanned system extensions: 72
+[2019-03-12 14:53:58.243] [sharedprocess] [info] Scanned system extensions: 72
+[2019-03-12 14:53:58.248] [sharedprocess] [info] Scanned system extensions: 72
+[2019-03-12 14:54:00.823] [sharedprocess] [info] Scanned user extensions: 3

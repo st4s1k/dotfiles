@@ -163,16 +163,13 @@ set_from_resource		$inactive-border-color		color7		#ff0000
 set_from_resource		$urgent-border-color		color1		#ff0000
 
 # window colors
-#			border			background		text			indicator
-client.focused		$border-color		$border-color		$text-color		$border-color
-client.unfocused	$inactive-border-color	$inactive-border-color	$inactive-text-color	$inactive-border-color
-client.focused_inactive	$inactive-border-color	$inactive-border-color	$inactive-text-color	$inactive-border-color
-client.urgent		$urgent-border-color	$urgent-border-color	$text-color		$urgent-border-color
+#			border			background	text			indicator		child_border
+client.focused		$border-color		$bg-color	$text-color		$border-color		$border-color
+client.focused_inactive	$inactive-border-color	$bg-color	$text-color		$inactive-border-color	
+client.unfocused	$inactive-border-color	$bg-color	$inactive-text-color	$inactive-border-color	
+client.urgent		$urgent-border-color	$bg-color	$text-color		$urgent-border-color	
 
-# thin borders & no title bar
-hide_edge_borders both
-for_window [class="^.*"] border pixel 1
-new_window 1pixel
+client.background	$bg-color
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -180,32 +177,37 @@ new_window 1pixel
 bar {
 	position top
   	tray_output primary
-	status_command i3blocks -c ~/.config/i3/i3blocks.conf
+	status_command i3blocks -c $HOME/.config/i3/i3blocks.conf
 	colors {
 		background $bg-color
 	    	separator #757575
 		#			border			background		text
 		focused_workspace	$border-color		$bg-color		$text-color
 		inactive_workspace	$bg-color		$bg-color		$inactive-text-color
-		urgent_workspace	$urgent-bg-color	$urgent-bg-color	$text-color
+		urgent_workspace	$urgent-border-color	$bg-color		$urgent-border-color
 	}
 }
 
+# thin borders & no title bar
+#hide_edge_borders both
+for_window [class="^.*"] border pixel 1
+new_window 1pixel
+
 # Key-bindings
 # Dunst notifiactions test
-bindsym $mod+u exec "sh ~/.config/dunst/dtest"
+bindsym $mod+u exec "sh $HOME/.config/dunst/dtest"
 # Audio
 # Alsa controls
-bindsym XF86AudioRaiseVolume	exec "amixer -q sset Master 5%+ unmute && pkill -RTMIN+10 i3blocks && dunstify -r 314159 $(sh ~/.config/i3/scripts/volume)"
-bindsym XF86AudioLowerVolume	exec "amixer -q sset Master 5%- unmute && pkill -RTMIN+10 i3blocks && dunstify -r 314159 $(sh ~/.config/i3/scripts/volume)"
-bindsym XF86AudioMute		exec "amixer -q sset Master toggle && pkill -RTMIN+10 i3blocks && dunstify -r 314159 $(sh ~/.config/i3/scripts/volume)"
+bindsym XF86AudioRaiseVolume	exec "amixer -q sset Master 5%+ unmute && pkill -RTMIN+10 i3blocks && dunstify -r 314159 $(sh $HOME/.config/i3/scripts/volume)"
+bindsym XF86AudioLowerVolume	exec "amixer -q sset Master 5%- unmute && pkill -RTMIN+10 i3blocks && dunstify -r 314159 $(sh $HOME/.config/i3/scripts/volume)"
+bindsym XF86AudioMute		exec "amixer -q sset Master toggle && pkill -RTMIN+10 i3blocks && dunstify -r 314159 $(sh $HOME/.config/i3/scripts/volume)"
 # Pulse Audio controls
 #bindsym XF86AudioRaiseVolume	exec "pactl set-sink-volume 0 +5%; pkill -RTMIN+10 i3blocks"
 #bindsym XF86AudioLowerVolume	exec "pactl set-sink-volume 0 -5%; pkill -RTMIN+10 i3blocks"
 #bindsym XF86AudioMute		exec "pactl set-sink-mute 0 toggle; pkill -RTMIN+10 i3blocks"
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp	exec "xbacklight -inc 20"
-bindsym XF86MonBrightnessDown	exec "xbacklight -dec 20"
+bindsym XF86MonBrightnessUp	exec "light -A 5"
+bindsym XF86MonBrightnessDown	exec "light -U 5"
 
 bindsym Print			exec "scrot $HOME/Pictures/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'"
 bindsym Shift+Print --release	exec "scrot -s $HOME/Pictures/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'"
@@ -216,24 +218,27 @@ set $web_browser "Firefox"
 assign [class=$web_browser] $ws1
 for_window [class=$web_browser] focus
 # Terminal
-set $terminal_app "URxvt"
-assign [class=$terminal_app] $ws2
-for_window [class=$terminal_app] focus
+#set $terminal_app "URxvt"
+#assign [class=$terminal_app] $ws2
+#for_window [class=$terminal_app] focus
 
 ## Startup
-# On first start
+# Scripts
+exec "$HOME/GitRepos/linux_config/backup.sh"
+# Programs
 exec --no-startup-id "compton -f"
 exec --no-startup-id "redshift -t 6500:4000"
 # i3 restart
+exec_always "--no-startup-id $HOME/.config/polybar/launch.sh"
 exec_always "setxkbmap -layout ro,ru"
 exec_always "setxkbmap -option 'grp:alt_shift_toggle'"
-exec_always "feh --bg-fill ~/.wallpaper.jpg"
-exec_always "xrdb -merge ~/.Xresources"
+exec_always "feh --bg-fill $HOME/.wallpaper.jpg"
+exec_always "xrdb -merge $HOME/.Xresources"
 
 ## i3-gaps config
 
-smart_gaps on
-gaps inner 10
+#smart_gaps on
+#gaps inner 10
 #gaps outer 10
 
 set $mode_gaps Gaps: (o)uter, (i)nner, (h)orizontal, (v)ertical, (t)op, (r)ight, (b)ottom, (l)eft

@@ -1,0 +1,21 @@
+[2019-03-12 14:54:35.388] [sharedprocess] [info] main {"machineId":"9fbc5806cfe91b6b9708c7da27724b647608dfdd4a830f9fda8b53af08905f8d"}
+[2019-03-12 14:54:35.449] [sharedprocess] [info] Scanned user extensions: 3
+[2019-03-12 14:54:35.462] [sharedprocess] [info] Scanned user extensions: 3
+[2019-03-12 14:54:35.492] [sharedprocess] [info] Scanned system extensions: 72
+[2019-03-12 14:54:35.496] [sharedprocess] [info] Scanned system extensions: 72
+[2019-03-12 14:54:35.927] [sharedprocess] [info] Scanned user extensions: 3
+[2019-03-12 14:54:36.609] [sharedprocess] [info] Scanned user extensions: 3
+[2019-03-12 14:54:36.611] [sharedprocess] [info] Scanned user extensions: 3
+[2019-03-12 14:54:36.613] [sharedprocess] [info] Scanned user extensions: 3
+[2019-03-12 14:54:36.614] [sharedprocess] [info] Scanned user extensions: 3
+[2019-03-12 14:54:36.673] [sharedprocess] [info] Scanned system extensions: 72
+[2019-03-12 14:54:36.676] [sharedprocess] [info] Scanned system extensions: 72
+[2019-03-12 14:54:36.680] [sharedprocess] [info] Scanned system extensions: 72
+[2019-03-12 14:54:45.875] [sharedprocess] [info] Scanned user extensions: 3
+[2019-03-12 14:54:45.876] [sharedprocess] [info] Uninstalling extension: pkief.material-icon-theme
+[2019-03-12 14:54:45.883] [sharedprocess] [info] Scanned user extensions: 3
+[2019-03-12 14:54:45.894] [sharedprocess] [info] Successfully uninstalled extension: pkief.material-icon-theme
+[2019-03-12 14:54:50.517] [sharedprocess] [info] Scanned user extensions: 2
+[2019-03-12 14:54:50.517] [sharedprocess] [info] Uninstalling extension: equinusocio.vsc-material-theme
+[2019-03-12 14:54:50.525] [sharedprocess] [info] Scanned user extensions: 2
+[2019-03-12 14:54:50.532] [sharedprocess] [info] Successfully uninstalled extension: equinusocio.vsc-material-theme

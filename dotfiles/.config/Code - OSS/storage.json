@@ -55,6 +55,20 @@
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/stanislav/MyStuff/UTM/a4/PL/Libraries/LightweightRingBuff.h",
+                                        "path": "/home/stanislav/MyStuff/UTM/a4/PL/Libraries/LightweightRingBuff.h",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/MyStuff/UTM/a4/PL/Libraries/LightweightRingBuff.h"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
                                     "id": "workbench.action.openRecent",
                                     "label": "&&More..."
                                 },
@@ -525,8 +539,7 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back",
-                        "enabled": false
+                        "label": "&&Back"
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -535,8 +548,7 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location",
-                        "enabled": false
+                        "label": "&&Last Edit Location"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1008,8 +1020,8 @@
                 "userSettingsLabel": "ctrl+k f"
             },
             "workbench.action.closeWindow": {
-                "label": "Ctrl+W",
-                "userSettingsLabel": "ctrl+w"
+                "label": "Ctrl+Shift+W",
+                "userSettingsLabel": "ctrl+shift+w"
             },
             "workbench.action.quit": {
                 "label": "Ctrl+Q",
@@ -1368,12 +1380,14 @@
     },
     "theme": "vs-dark",
     "themeBackground": "#1e1e1e",
-    "pickerWorkingDir": "/home/stanislav/GitRepos",
+    "pickerWorkingDir": "/home/stanislav/MyStuff/UTM/a4/PL/Libraries",
     "openedPathsList": {
         "workspaces3": [
             "file:///home/stanislav/GitRepos/QuadroneCarlos"
         ],
-        "files2": []
+        "files2": [
+            "file:///home/stanislav/MyStuff/UTM/a4/PL/Libraries/LightweightRingBuff.h"
+        ]
     },
     "windowsState": {
         "lastActiveWindow": {
@@ -1381,10 +1395,10 @@
             "backupPath": "/home/stanislav/.config/Code - OSS/Backups/76b172472bd7e70cda39f96269fcb246",
             "uiState": {
                 "mode": 1,
-                "x": 0,
-                "y": 18,
-                "width": 1366,
-                "height": 750
+                "x": 1,
+                "y": 19,
+                "width": 1364,
+                "height": 748
             }
         },
         "openedWindows": []

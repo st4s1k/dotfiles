@@ -2,5 +2,7 @@ bluez-hcitool
 bluez-rfcomm
 cutecom
 polybar
+teamviewer
 vk-messenger
 xcursor-dmz
+yay

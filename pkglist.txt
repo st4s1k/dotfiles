@@ -108,6 +108,8 @@ procps-ng
 psmisc
 pulseaudio
 pulseaudio-alsa
+pv
+python-pip
 python-pyserial
 ranger
 redshift

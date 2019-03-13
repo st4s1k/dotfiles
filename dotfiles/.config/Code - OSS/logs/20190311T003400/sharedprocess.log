@@ -1,0 +1,24 @@
+[2019-03-11 00:34:04.370] [sharedprocess] [info] main {"machineId":"9fbc5806cfe91b6b9708c7da27724b647608dfdd4a830f9fda8b53af08905f8d"}
+[2019-03-11 00:34:04.408] [sharedprocess] [info] Scanned user extensions: 0
+[2019-03-11 00:34:04.424] [sharedprocess] [info] Scanned user extensions: 0
+[2019-03-11 00:34:04.477] [sharedprocess] [info] Scanned system extensions: 72
+[2019-03-11 00:34:04.478] [sharedprocess] [info] Scanned system extensions: 72
+[2019-03-11 00:34:05.053] [sharedprocess] [info] Scanned user extensions: 0
+[2019-03-11 00:34:44.384] [sharedprocess] [info] Starting to clean up unused language packs.
+[2019-03-11 00:34:56.778] [sharedprocess] [info] Scanned user extensions: 0
+[2019-03-11 00:34:56.782] [sharedprocess] [info] Scanned user extensions: 0
+[2019-03-11 00:34:56.783] [sharedprocess] [info] Scanned user extensions: 0
+[2019-03-11 00:34:56.797] [sharedprocess] [info] Scanned user extensions: 0
+[2019-03-11 00:34:56.869] [sharedprocess] [info] Scanned system extensions: 72
+[2019-03-11 00:34:56.872] [sharedprocess] [info] Scanned system extensions: 72
+[2019-03-11 00:34:56.875] [sharedprocess] [info] Scanned system extensions: 72
+[2019-03-11 00:35:06.226] [sharedprocess] [info] Installing extension: ms-vscode.cpptools
+[2019-03-11 00:35:06.229] [sharedprocess] [info] Scanned user extensions: 0
+[2019-03-11 00:35:09.036] [sharedprocess] [info] Downloaded extension: ms-vscode.cpptools /tmp/d2671568-c75b-469a-87fb-c5b516ea4011
+[2019-03-11 00:35:09.747] [sharedprocess] [info] Extracted extension to /home/stanislav/.vscode-oss/extensions/.ms-vscode.cpptools-0.21.0: ms-vscode.cpptools
+[2019-03-11 00:35:09.748] [sharedprocess] [info] Renamed to /home/stanislav/.vscode-oss/extensions/ms-vscode.cpptools-0.21.0
+[2019-03-11 00:35:09.750] [sharedprocess] [info] Installation completed. ms-vscode.cpptools
+[2019-03-11 00:35:09.773] [sharedprocess] [info] Extensions installed successfully: ms-vscode.cpptools
+[2019-03-11 00:35:26.496] [sharedprocess] [info] Scanned user extensions: 1
+[2019-03-11 00:35:26.514] [sharedprocess] [info] Scanned system extensions: 72
+[2019-03-11 00:37:30.459] [sharedprocess] [info] Scanned user extensions: 1

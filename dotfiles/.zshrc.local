@@ -1,14 +1,14 @@
 # My aliases
 # - Navigation
-alias cdqc="cd ~/GitRepos/QuadroneCarlos/"
-alias cdgr="cd ~/GitRepos"
-alias cdms="cd ~/MyStuff"
+alias cdqc="cd $HOME/GitRepos/QuadroneCarlos/"
+alias cdgr="cd $HOME/GitRepos"
+alias cdms="cd $HOME/MyStuff"
+alias cdlc="cd $HOME/GitRepos/linux_config/"
 # - Shortcuts
-alias cleandep="sudo pacman -Rs $(pacman -Qtdq)"
+alias cleandeps="sh $HOME/GitRepos/linux_config/cleandeps.sh"
 alias c="xclip -sel clip"
-alias qcrfcomm="sudo rfcomm bind 0 20:15:04:10:64:55"
-alias bkpcfg="sh ~/GitRepos/linux_config/backup.sh"
-
+alias rfqc="sudo rfcomm bind 0 20:15:04:10:64:55"
+alias sysrefresh="sudo pacman -Syyu && yay -Syyu"
 
 # Grml settings
 
@@ -30,17 +30,17 @@ alias bkpcfg="sh ~/GitRepos/linux_config/backup.sh"
 ################################################################################
 
 ## Inform users about upgrade path for grml's old zshrc layout, assuming that:
-## /etc/skel/.zshrc was installed as ~/.zshrc,
-## /etc/zsh/zshrc was installed as ~/.zshrc.global and
-## ~/.zshrc.local does not exist yet.
-if [ -r ~/.zshrc -a -r ~/.zshrc.global -a ! -r ~/.zshrc.local ] ; then
+## /etc/skel/.zshrc was installed as $HOME/.zshrc,
+## /etc/zsh/zshrc was installed as $HOME/.zshrc.global and
+## $HOME/.zshrc.local does not exist yet.
+if [ -r $HOME/.zshrc -a -r ~/.zshrc.global -a ! -r ~/.zshrc.local ] ; then
     printf '-!-\n'
     printf '-!- Looks like you are using the old zshrc layout of grml.\n'
     printf '-!- Please read the notes in the grml-zsh-refcard, being'
     printf '-!- available at: http://grml.org/zsh/\n'
     printf '-!-\n'
     printf '-!- If you just want to get rid of this warning message execute:\n'
-    printf '-!-        touch ~/.zshrc.local\n'
+    printf '-!-        touch $HOME/.zshrc.local\n'
     printf '-!-\n'
 fi
 
@@ -121,7 +121,7 @@ fi
 ## try to avoid the 'zsh: no matches found...'
 #setopt nonomatch
 
-## warning if file exists ('cat /dev/null > ~/.zshrc')
+## warning if file exists ('cat /dev/null > $HOME/.zshrc')
 #setopt NO_clobber
 
 ## don't warn me about bg processes when exiting
@@ -182,7 +182,7 @@ fi
 ## translate
 #alias u='translate -i'
 
-## ignore ~/.ssh/known_hosts entries
+## ignore $HOME/.ssh/known_hosts entries
 #alias insecssh='ssh -o "StrictHostKeyChecking=no" -o "UserKnownHostsFile=/dev/null" -o "PreferredAuthentications=keyboard-interactive"'
 
 
