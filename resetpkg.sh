@@ -5,8 +5,8 @@ if [ $(id -u) = 0 ]; then
 	exit 1
 fi
 
-current_dir=$( temp=$( realpath "$0"  ) && dirname "$temp" ) ;
+current_dir=$(temp=$(realpath "$0") && dirname "$temp")
 
-sudo pacman -Rsu $(comm -23 <(pacman -Qq|sort) <(sort $current_dir/pkglist.txt)) ;
+sudo pacman -Rsu $(comm -23 <(pacman -Qq|sort) <(sort $current_dir/pkglist.txt))
 
 notify-send -u normal "Reset complete."

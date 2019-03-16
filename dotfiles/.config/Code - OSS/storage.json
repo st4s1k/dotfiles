@@ -548,7 +548,8 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location"
+                        "label": "&&Last Edit Location",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1020,8 +1021,8 @@
                 "userSettingsLabel": "ctrl+k f"
             },
             "workbench.action.closeWindow": {
-                "label": "Ctrl+Shift+W",
-                "userSettingsLabel": "ctrl+shift+w"
+                "label": "Ctrl+W",
+                "userSettingsLabel": "ctrl+w"
             },
             "workbench.action.quit": {
                 "label": "Ctrl+Q",
@@ -1363,10 +1364,6 @@
                 "isNative": false,
                 "userSettingsLabel": "ctrl+\\"
             },
-            "workbench.action.tasks.build": {
-                "label": "Ctrl+Shift+B",
-                "userSettingsLabel": "ctrl+shift+b"
-            },
             "workbench.action.keybindingsReference": {
                 "label": "Ctrl+K Ctrl+R",
                 "isNative": false,
@@ -1395,10 +1392,10 @@
             "backupPath": "/home/stanislav/.config/Code - OSS/Backups/76b172472bd7e70cda39f96269fcb246",
             "uiState": {
                 "mode": 1,
-                "x": 1,
-                "y": 19,
-                "width": 1364,
-                "height": 748
+                "x": 912,
+                "y": 1,
+                "width": 453,
+                "height": 766
             }
         },
         "openedWindows": []

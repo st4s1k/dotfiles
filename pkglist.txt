@@ -13,6 +13,8 @@ bluez
 bluez-utils
 bzip2
 c-ares
+caprine
+clang
 code
 compton
 conky
@@ -34,6 +36,7 @@ file
 filesystem
 findutils
 firefox
+flatpak
 flex
 gawk
 gcc
@@ -138,6 +141,7 @@ ttf-inconsolata
 ttf-liberation
 ttf-roboto
 ttf-ubuntu-font-family
+unzip
 urxvt-perls
 usbutils
 util-linux

@@ -6,6 +6,8 @@ alias cdms="cd $HOME/MyStuff"
 alias cdlc="cd $HOME/GitRepos/linux_config/"
 # - Shortcuts
 alias cleandeps="sh $HOME/GitRepos/linux_config/cleandeps.sh"
+alias bkpcfg="sh $HOME/GitRepos/linux_config/backup.sh"
+alias rstcfg="sh $HOME/GitRepos/linux_config/reset.sh"
 alias c="xclip -sel clip"
 alias rfqc="sudo rfcomm bind 0 20:15:04:10:64:55"
 alias sysrefresh="sudo pacman -Syyu && yay -Syyu"
