@@ -17,8 +17,8 @@
 ;==========================================================
 
 [colors]
-;background = ${xrdb:color0:#222}
-background = #222
+background = ${xrdb:color0:#222}
+;background = #222
 background-alt = #444
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
@@ -52,13 +52,13 @@ module-margin-left = 1
 module-margin-right = 2
 
 font-0 = xos4 Terminus:pixelsize=8;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-1 = unifont:fontformat=truetype:pixelsize=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
-#font-3 = FontAwesome:pixelsize=10;1
+font-3 = Font Awesome 5 Free:pixelsize=10;3
 
 modules-left = bspwm i3
-modules-center = 
-modules-right = filesystem xbacklight pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
+modules-center = pulseaudio filesystem date
+modules-right = xbacklight xkeyboard memory cpu wlan eth battery temperature powermenu
 
 tray-position = right
 tray-padding = 2
@@ -86,9 +86,10 @@ label = %title:0:30:...%
 type = internal/xkeyboard
 blacklist-0 = num lock
 
-format-prefix = " "
+format-prefix = " lang: "
 format-prefix-foreground = ${colors.foreground-alt}
 format-prefix-underline = ${colors.secondary}
+format-prefix-font = 3
 
 label-layout = %layout%
 label-layout-underline = ${colors.secondary}
@@ -104,7 +105,7 @@ interval = 25
 
 mount-0 = /
 
-label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %used% / %total%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -208,6 +209,7 @@ type = internal/cpu
 interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-font = 3
 format-underline = #f90000
 label = %percentage:2%%
 
@@ -216,6 +218,7 @@ type = internal/memory
 interval = 2
 format-prefix = " "
 format-prefix-for eground = ${colors.foreground-alt}
+format-prefix-font = 3
 format-underline = #4bffdc
 label = %percentage_used%%
 
@@ -249,6 +252,7 @@ interval = 3.0
 format-connected-underline = #55aa55
 format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
+format-connected-prefix-font = 3
 label-connected = %local_ip%
 
 format-disconnected =
@@ -259,19 +263,20 @@ format-disconnected =
 
 [module/date]
 type = internal/date
-interval = 5
+interval = 1
 
-date =
-date-alt = " %Y-%m-%d"
+date = %Y-%m-%d
+date-alt = %Y-%m-%d
 
-time = %H:%M
+time = %H:%M:%S
 time-alt = %H:%M:%S
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-font = 3
 format-underline = #0a6cf5
 
-label = %date% %time%
+label = %time% %date%
 
 [module/pulseaudio]
 type = internal/pulseaudio
@@ -282,6 +287,7 @@ label-volume-foreground = ${root.foreground}
 
 label-muted = 🔇 muted
 label-muted-foreground = #666
+label-muted-font = 3
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55
@@ -309,6 +315,7 @@ label-volume-foreground = ${root.foreground}
 
 format-muted-prefix = " "
 format-muted-foreground = ${colors.foreground-alt}
+format-muted-prefix-font = 3
 label-muted = sound muted
 
 bar-volume-width = 10

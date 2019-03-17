@@ -1,0 +1,81 @@
+.wallpaper.jpg
+.zshrc.local
+.fonts
+.fonts/Font Awesome 5 Free-Solid-900.otf
+.fonts/fontawesome-webfont.woff
+.fonts/fontawesome-webfont.ttf
+.fonts/fontawesome-webfont.eot
+.fonts/Hack-BoldItalic.ttf
+.fonts/Hack-Regular.ttf
+.fonts/Hack-Italic.ttf
+.fonts/System San Francisco Display Thin.ttf
+.fonts/Font Awesome 5 Brands-Regular-400.otf
+.fonts/System San Francisco Display Ultralight.ttf
+.fonts/fontawesome-webfont.woff2
+.fonts/System San Francisco Display Bold.ttf
+.fonts/fontawesome-webfont.svg
+.fonts/System San Francisco Display Regular.ttf
+.fonts/Hack-Bold.ttf
+.fonts/FontAwesome.otf
+.fonts/Terminal-Regular.ttf
+.fonts/.uuid
+.fonts/Font Awesome 5 Free-Regular-400.otf
+.config
+.config/polybar
+.config/polybar/config
+.config/polybar/launch.sh
+.config/ranger
+.config/ranger/commands.py
+.config/ranger/commands_full.py
+.config/ranger/rc.conf
+.config/ranger/scope.sh
+.config/ranger/rifle.conf
+.config/dunst
+.config/dunst/dtest
+.config/dunst/dunstrc
+.config/rofi
+.config/rofi/config.rasi
+.config/i3
+.config/i3/config
+.config/i3/i3-volume
+.config/i3/i3-volume/volume-notifications.png
+.config/i3/i3-volume/README.md
+.config/i3/i3-volume/LICENSE
+.config/i3/i3-volume/volume
+.config/i3/i3blocks.conf
+.config/i3/scripts
+.config/i3/scripts/mediaplayer
+.config/i3/scripts/cpu_usage
+.config/i3/scripts/disk
+.config/i3/scripts/keyindicator
+.config/i3/scripts/bandwidth
+.config/i3/scripts/iface
+.config/i3/scripts/wifi
+.config/i3/scripts/openvpn
+.config/i3/scripts/exit_menu
+.config/i3/scripts/memory
+.config/i3/scripts/battery
+.config/i3/scripts/volume
+.config/i3/scripts/temperature
+.config/i3/scripts/load_average
+.config/i3/workspace-1.json
+.config/i3/i3status.conf
+.scripts
+.scripts/i3lock-blur
+.scripts/i3lock-blur/README.md
+.scripts/i3lock-blur/lock.sh
+.scripts/i3lock-blur/LICENSE
+.scripts/i3lock-blur/lock.png
+.icons
+.icons/default
+.icons/default/index.theme
+.urxvt
+.urxvt/ext
+.urxvt/ext/resize-font
+.ssh
+.ssh/id_rsa.pub
+.ssh/known_hosts
+.ssh/id_rsa
+.compton.conf
+.Xresources
+.vimrc

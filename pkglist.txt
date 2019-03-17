@@ -30,6 +30,7 @@ e2fsprogs
 efibootmgr
 elinks
 fakeroot
+fdupes
 feh
 ffmpegthumbnailer
 file
@@ -94,6 +95,7 @@ nvidia-settings
 nvidia-utils
 odt2txt
 openssh
+p7zip
 pacman
 patch
 pavucontrol
@@ -118,6 +120,7 @@ ranger
 redshift
 reiserfsprogs
 rofi
+rsync
 rxvt-unicode
 s-nail
 screen
@@ -151,6 +154,7 @@ vlc
 w3m
 which
 xclip
+xdg-user-dirs
 xf86-video-intel
 xf86-video-vesa
 xfsprogs
@@ -202,4 +206,7 @@ xorg-xwininfo
 xorg-xwud
 youtube-dl
 youtube-viewer
+zathura
+zathura-djvu
+zathura-pdf-mupdf
 zsh

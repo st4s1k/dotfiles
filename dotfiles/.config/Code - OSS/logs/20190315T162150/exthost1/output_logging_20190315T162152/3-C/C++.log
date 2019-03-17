@@ -1,4 +1,0 @@
-Formatting failed:
-/usr/bin/clang-format -style=file -fallback-style="{ basedonstyle: google, indentwidth: 4 }" -assume-filename=/home/stanislav/GitRepos/QuadroneCarlos/src/usart.cpp
-  Invalid fallback style ""{ basedonstyle: google, indentwidth: 4 }"
-  

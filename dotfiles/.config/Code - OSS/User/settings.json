@@ -1,9 +1,0 @@
-{
-    "workbench.startupEditor": "newUntitledFile",
-    "window.menuBarVisibility": "toggle",
-    "window.zoomLevel": 0,
-    "editor.fontFamily": "Ubuntu Mono",
-    "git.autofetch": true,
-    "C_Cpp.clang_format_path": "/usr/bin/clang-format",
-    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4 }"
-}

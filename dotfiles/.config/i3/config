@@ -191,7 +191,7 @@ client.background	$bg-color
 
 # thin borders & no title bar
 hide_edge_borders both
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 0
 new_window 1pixel
 
 ## Key-bindings ##
@@ -200,14 +200,14 @@ new_window 1pixel
 bindsym Control+L			exec "$HOME/.scripts/i3lock-blur/lock.sh"
 
 # Dunst notifiactions test
-# bindsym $mod+u exec "sh $HOME/.config/dunst/dtest"
+bindsym $mod+u exec "sh $HOME/.config/dunst/dtest"
 
 # Audio
 
 # Alsa controls
-bindsym XF86AudioRaiseVolume	exec "amixer -q sset Master 5%+ unmute && pkill -RTMIN+10 i3blocks && dunstify -r 314159 $(sh $HOME/.config/i3/scripts/volume)"
-bindsym XF86AudioLowerVolume	exec "amixer -q sset Master 5%- unmute && pkill -RTMIN+10 i3blocks && dunstify -r 314159 $(sh $HOME/.config/i3/scripts/volume)"
-bindsym XF86AudioMute		exec "amixer -q sset Master toggle && pkill -RTMIN+10 i3blocks && dunstify -r 314159 $(sh $HOME/.config/i3/scripts/volume)"
+bindsym XF86AudioRaiseVolume	exec "amixer -q sset Master 5%+ unmute && dunstify -r 314159 $(sh $HOME/.config/i3/scripts/volume) && pkill -RTMIN+10 i3blocks"
+bindsym XF86AudioLowerVolume	exec "amixer -q sset Master 5%- unmute && dunstify -r 314159 $(sh $HOME/.config/i3/scripts/volume) && pkill -RTMIN+10 i3blocks"
+bindsym XF86AudioMute		exec "amixer -q sset Master toggle && dunstify -r 314159 $(sh $HOME/.config/i3/scripts/volume) && pkill -RTMIN+10 i3blocks"
 
 # Pulse Audio controls
 #bindsym XF86AudioRaiseVolume	exec "pactl set-sink-volume 0 +5%; pkill -RTMIN+10 i3blocks"
@@ -225,15 +225,15 @@ bindsym Shift+Print --release	exec "scrot -s $HOME/Pictures/screenshot-$(date +%
 
 set $num_short_1 "firefox"
 set $num_short_2 "vk-messenger"
-set $num_short_3 "code"
+set $num_short_3 "code $HOME/GitRepos/QuadroneCarlos"
 #set $num_short_4 ""
 set $num_short_5 "caprine"
 #set $num_short_6 ""
 #set $num_short_7 ""
 #set $num_short_8 ""
 #set $num_short_9 ""
-#set $num_short_0 ""
-#set $num_short_del ""
+set $num_short_0 "urxvt -e ranger"
+set $num_short_del "urxvt -e python"
 
 bindsym $mod+Shift+KP_1 exec $num_short_1
 bindsym $mod+Shift+Mod2+KP_End exec $num_short_1
@@ -262,11 +262,11 @@ bindsym $mod+Shift+Mod2+KP_Begin exec $num_short_5
 # bindsym $mod+Shift+KP_9 exec $num_short_9
 # bindsym $mod+Shift+Mod2+KP_Prior exec $num_short_9
 
-# bindsym $mod+Shift+KP_0 exec $num_short_0
-# bindsym $mod+Shift+Mod2+KP_Insert exec $num_short_0
+bindsym $mod+Shift+KP_0 exec $num_short_0
+bindsym $mod+Shift+Mod2+KP_Insert exec $num_short_0
 
-# bindsym $mod+Shift+KP_Decimal exec $num_short_del
-# bindsym $mod+Shift+Mod2+KP_Delete exec $num_short_del
+bindsym $mod+Shift+KP_Decimal exec $num_short_del
+bindsym $mod+Shift+Mod2+KP_Delete exec $num_short_del
 
 ## Assign windows to workspaces ##
 
@@ -279,6 +279,11 @@ for_window [class=$web_browser] focus
 #set $terminal_app "URxvt"
 #assign [class=$terminal_app] $ws2
 #for_window [class=$terminal_app] focus
+
+# Visual Studio Code
+set $vscode "code-oss"
+assign [class=$vscode] $ws3
+for_window [class=$vscode] focus
 
 ## Startup ##
 

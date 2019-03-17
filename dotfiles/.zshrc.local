@@ -4,6 +4,7 @@ alias cdqc="cd $HOME/GitRepos/QuadroneCarlos/"
 alias cdgr="cd $HOME/GitRepos"
 alias cdms="cd $HOME/MyStuff"
 alias cdlc="cd $HOME/GitRepos/linux_config/"
+alias cddl="cd $HOME/Downloads"
 # - Shortcuts
 alias cleandeps="sh $HOME/GitRepos/linux_config/cleandeps.sh"
 alias bkpcfg="sh $HOME/GitRepos/linux_config/backup.sh"
