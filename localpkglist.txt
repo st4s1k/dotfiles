@@ -1,8 +1,11 @@
 bluez-hcitool
 bluez-rfcomm
 cutecom
+kvantum-qt5-git
 polybar
 teamviewer
+terminus-font-ttf
+ttf-font-awesome-4
 vk-messenger
 xcursor-dmz
 xkb-switch

@@ -3,7 +3,7 @@ set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 # font pango:monospace 8
-font pango:xos4 terminus, Awesome 8
+font pango:Terminus (TTF), Awesome 8
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -174,7 +174,7 @@ client.background	$bg-color
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-# bar
+# Bar
 #bar {
 #	position top
 #  	tray_output primary
@@ -226,54 +226,54 @@ bindsym Shift+Print --release	exec "scrot -s $HOME/Pictures/screenshot-$(date +%
 set $num_short_1 "firefox"
 set $num_short_2 "vk-messenger"
 set $num_short_3 "code $HOME/GitRepos/QuadroneCarlos"
-#set $num_short_4 ""
+set $num_short_4 "firefox --private-window"
 set $num_short_5 "caprine"
 #set $num_short_6 ""
 #set $num_short_7 ""
 #set $num_short_8 ""
 #set $num_short_9 ""
-set $num_short_0 "urxvt -e ranger"
-set $num_short_del "urxvt -e python"
+set $num_short_0 "urxvt -e python"
+set $num_short_del "urxvt -e ranger"
 
-bindsym $mod+Shift+KP_1 exec $num_short_1
-bindsym $mod+Shift+Mod2+KP_End exec $num_short_1
+bindsym $mod+Shift+KP_1                 workspace 1; exec --no-startup-id $num_short_1
+bindsym $mod+Shift+Mod2+KP_End          workspace 1; exec --no-startup-id $num_short_1
 
-bindsym $mod+Shift+KP_2 exec $num_short_2
-bindsym $mod+Shift+Mod2+KP_Down exec $num_short_2
+bindsym $mod+Shift+KP_2                 workspace 2; exec --no-startup-id $num_short_2
+bindsym $mod+Shift+Mod2+KP_Down         workspace 2; exec --no-startup-id $num_short_2
 
-bindsym $mod+Shift+KP_3 exec $num_short_3
-bindsym $mod+Shift+Mod2+KP_Next exec $num_short_3
+bindsym $mod+Shift+KP_3                 workspace 3; exec --no-startup-id $num_short_3
+bindsym $mod+Shift+Mod2+KP_Next         workspace 3; exec --no-startup-id $num_short_3
 
-# bindsym $mod+Shift+KP_4 exec $num_short_4
-# bindsym $mod+Shift+Mod2+KP_Left exec $num_short_4
+bindsym $mod+Shift+KP_4                 workspace 10; exec --no-startup-id $num_short_4
+bindsym $mod+Shift+Mod2+KP_Left         workspace 10; exec --no-startup-id $num_short_4
 
-bindsym $mod+Shift+KP_5 exec $num_short_5
-bindsym $mod+Shift+Mod2+KP_Begin exec $num_short_5
+bindsym $mod+Shift+KP_5                 workspace 2; exec --no-startup-id $num_short_5
+bindsym $mod+Shift+Mod2+KP_Begin        workspace 2; exec --no-startup-id $num_short_5
 
-# bindsym $mod+Shift+KP_6 exec $num_short_6
-# bindsym $mod+Shift+Mod2+KP_Right exec $num_short_6
+# bindsym $mod+Shift+KP_6               workspace 6; exec --no-startup-id $num_short_6
+# bindsym $mod+Shift+Mod2+KP_Right      workspace 6; exec --no-startup-id $num_short_6
 
-# bindsym $mod+Shift+KP_7 exec $num_short_7
-# bindsym $mod+Shift+Mod2+KP_Home exec $num_short_7
+# bindsym $mod+Shift+KP_7               workspace 7; exec --no-startup-id $num_short_7
+# bindsym $mod+Shift+Mod2+KP_Home       workspace 7; exec --no-startup-id $num_short_7
 
-# bindsym $mod+Shift+KP_8 exec $num_short_8
-# bindsym $mod+Shift+Mod2+KP_Up exec $num_short_8
+# bindsym $mod+Shift+KP_8               workspace 8; exec --no-startup-id $num_short_8
+# bindsym $mod+Shift+Mod2+KP_Up         workspace 8; exec --no-startup-id $num_short_8
 
-# bindsym $mod+Shift+KP_9 exec $num_short_9
-# bindsym $mod+Shift+Mod2+KP_Prior exec $num_short_9
+# bindsym $mod+Shift+KP_9               workspace 9; exec --no-startup-id $num_short_9
+# bindsym $mod+Shift+Mod2+KP_Prior      workspace 9; exec --no-startup-id $num_short_9
 
-bindsym $mod+Shift+KP_0 exec $num_short_0
-bindsym $mod+Shift+Mod2+KP_Insert exec $num_short_0
+bindsym $mod+Shift+KP_0                 exec --no-startup-id $num_short_0
+bindsym $mod+Shift+Mod2+KP_Insert       exec --no-startup-id $num_short_0
 
-bindsym $mod+Shift+KP_Decimal exec $num_short_del
-bindsym $mod+Shift+Mod2+KP_Delete exec $num_short_del
+bindsym $mod+Shift+KP_Decimal           exec --no-startup-id $num_short_del
+bindsym $mod+Shift+Mod2+KP_Delete       exec --no-startup-id $num_short_del
 
 ## Assign windows to workspaces ##
 
 # Web Browser
-set $web_browser "Firefox"
-assign [class=$web_browser] $ws1
-for_window [class=$web_browser] focus
+#set $web_browser "Firefox"
+#assign [class=$web_browser] $ws1
+#for_window [class=$web_browser] focus
 
 # Terminal
 #set $terminal_app "URxvt"
@@ -281,26 +281,27 @@ for_window [class=$web_browser] focus
 #for_window [class=$terminal_app] focus
 
 # Visual Studio Code
-set $vscode "code-oss"
-assign [class=$vscode] $ws3
-for_window [class=$vscode] focus
+#set $vscode "code-oss"
+#assign [class=$vscode] $ws3
+#for_window [class=$vscode] focus
 
 ## Startup ##
 
 # Scripts
-exec "$HOME/GitRepos/linux_config/backup.sh"
+exec --no-startup-id "$HOME/GitRepos/linux_config/backup.sh"
 
 # Programs
 exec --no-startup-id "compton -f"
 exec --no-startup-id "redshift -t 6500:4000"
 
 # i3 restart
-exec_always "--no-startup-id $HOME/.config/polybar/launch.sh"
-exec_always "setxkbmap -layout ro,ru"
-exec_always "setxkbmap -option 'grp:alt_shift_toggle'"
-exec_always "feh --bg-fill $HOME/.wallpaper.jpg"
-exec_always "xrdb -merge $HOME/.Xresources"
-exec_always --no-startup-id "$HOME/.config/polybar/launch.sh"
+exec_always --no-startup-id "--no-startup-id $HOME/.config/polybar/launch.sh"
+exec_always --no-startup-id "setxkbmap -layout ro,ru"
+exec_always --no-startup-id "setxkbmap -option 'grp:alt_shift_toggle'"
+exec_always --no-startup-id "feh --bg-fill $HOME/.wallpaper.jpg"
+exec_always --no-startup-id "xrdb -merge $HOME/.Xresources"
+exec_always --no-startup-id "/bin/sh $HOME/.config/polybar/launch.sh"
+exec_always --no-startup-id "killall mega-cmd-server; mega-cmd-server"
 
 ## i3-gaps config ##
 

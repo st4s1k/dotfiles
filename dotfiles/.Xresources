@@ -1,5 +1,5 @@
 ! Rofi config
-rofi*font:		xos4 Terminus 10
+rofi*font:		Terminus (TTF) 12
 
 ! URxvt config
 URxvt*internalBorder:	20
@@ -19,8 +19,8 @@ URxvt.keysym.Control-Shift-C:	perl:clipboard:coy
 URxvt.keysym.Control-Shift-V:	perl:clipboard:paste
 ! Font settings
 Xft*dpi:		104
-URxvt.font:		xft:xos4terminus:size=10:antialias=false
-URxvt.boldFont:		xft:xos4terminus:size=10:antialias=false
+URxvt.font:		xft:Terminus (TTF):size=10:antialias=false
+URxvt.boldFont:		xft:Terminus (TTF):size=10:antialias=false
 
 ! special
 *.foreground:	#a39e9b
